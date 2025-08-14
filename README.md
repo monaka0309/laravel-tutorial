@@ -41,8 +41,7 @@
 * PHP
 * Laravel フレームワーク
 * Blade テンプレートエンジン
-* データベース：SQLite / MySQL / PostgreSQL（任意）
-* Web サーバー：PHPビルトインサーバー / Apache / Nginx
+* データベース：SQLite
 
 ---
 
@@ -51,7 +50,7 @@
 * PHP 8.4.10
 * Composer
 * Laravel 8.83.29
-* データベース：SQLite等（設定により変更可）
+* データベース：SQLite
 
 ---
 
@@ -73,9 +72,9 @@ cp .env.example .env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=laravel
-DB_USERNAME=root
-DB_PASSWORD=xxxxxx
+DB_DATABASE=db
+DB_USERNAME=user
+DB_PASSWORD=password
 
 
 # マイグレーション実行
