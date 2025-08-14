@@ -66,15 +66,17 @@ cd laravel-tutorial
 composer install
 
 # 環境変数ファイルをコピー
-cp .env.example .env
+cp .env.example .env    
 
-# アプリケーションキーを生成
-php artisan key:generate
-
-# データベース設定（例：SQLite）
+# データベース設定（SQLite）
 # .env に以下のように設定
-# DB_CONNECTION=sqlite
-# DB_DATABASE=/absolute/path/to/database.sqlite
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=xxxxxx
+
 
 # マイグレーション実行
 php artisan migrate
